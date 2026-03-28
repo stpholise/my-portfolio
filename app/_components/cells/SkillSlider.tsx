@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 type SkillSliderProps = {
-  level: number; // percentage (0 - 100)
+  level: number;  
   label: string;
 };
 

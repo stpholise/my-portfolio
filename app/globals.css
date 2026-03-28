@@ -10,7 +10,7 @@
   --color-purple-3: #c084fc33;
   --color-secondary-light: #3f1d6b;
   --font-josephine: "Josefin Sans", sans-serif;
-  --font-pacifico: "Pacifico", cursive; 
+  --font-pacifico: "Pacifico", cursive;
   --animate-float: float 15s ease-in-out infinite;
   --animate-floating-badge: floatBadge 3s ease-in-out infinite;
   --animate-pulseRing: "pulseRing 1.5s linear infinite";
@@ -100,9 +100,13 @@
     transform: translateY(-20px);
   }
 }
- 
 
 @keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%) ;}
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
+ 
