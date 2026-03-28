@@ -240,7 +240,7 @@ const Page = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="floating-badge badge-1 absolute  -bottom-3/6 -right-3/6 sm:right-1 lg:top-3/7 lg:-right-2/5 bg-gray-700  border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50  transition-all">
+                  <div className=" h-fit floating-badge badge-1 absolute  -bottom-3/6 -right-3/6 sm:right-1 lg:top-3/7 lg:-right-2/5 bg-gray-700  border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50  transition-all">
                     <FontAwesomeIcon
                       icon={faNodeJs}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -254,7 +254,7 @@ const Page = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="floating-badge badge-1 absolute top-6/7 left-0 transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50 w-fit  transition-all">
+                  <div className=" h-fit floating-badge badge-1 absolute top-6/7 left-0 transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50 w-fit  transition-all">
                     <FontAwesomeIcon
                       icon={faJs}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -319,12 +319,12 @@ const Page = () => {
               </p>
               <div className="  mt-8 flex gap-4 justify-center">
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
-                  <StatNumber target={18} />
+                  <StatNumber target={12} />
                   <p>Projects</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
-                  <StatNumber target={18} />
-                  <p>Projects</p>
+                  <StatNumber target={3} />
+                  <p>Years Experience</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={18} />
