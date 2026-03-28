@@ -129,7 +129,7 @@ const Page = () => {
       setLoading(false);
     } catch (err) {
       if (err instanceof Error) {
-        toast.error( "Message was not sent");
+        toast.error("Message was not sent");
       }
     } finally {
       setLoading(false);
@@ -150,8 +150,8 @@ const Page = () => {
             ></div>
           </div>
           <div className="mx-auto md:py-16 lg:py-8 px-4">
-            <div className="flex justify-center items-center gap-8 py-8">
-              <div className="flex flex-col gap-5">
+            <div className="flex  sm:flex-row flex-col-reverse justify-center items-center mt-26 sm:mt-0 gap-8 py-8">
+              <div className="flex mt-26 sm:mt-0 flex-col gap-5">
                 <h2 className="text-2xl">
                   Hello I am Stephen Olise Osa-afiana
                 </h2>
@@ -214,7 +214,7 @@ const Page = () => {
                 </div>
               </div>
               <div className="hero-image-wrapper relative flex items-center justify-center">
-                <div className="hero-image-container relative size-100">
+                <div className="hero-image-container relative size-50 sm:size-100">
                   <div className="profile-image-glow absolute top-1/2 left-1/2 transform -translate-1/2 size-[120%] rounded-full bg-radial-[at_50%] from-purple-900 from-0% to-70% to-transparent animate-pulse -z-1"></div>
                   <div className="bg-radial-[at_50%] absolute top-1/2 left-1/2 transform -translate-1/2 from-secondary-light to-primary  flex items-center justify-center  border-purple-900 border-4 shadow-purple-800   size-90  rounded-full  bg-center ">
                     <Image
@@ -225,7 +225,7 @@ const Page = () => {
                       className="size-full rounded-full overflow-hidden "
                     />
                   </div>
-                  <div className="floating-badge badge-1 absolute top-1/5 left-8  transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-3 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-[bounce_4s_infinite] min-w-50 w-fit  transition-all">
+                  <div className="floating-badge badge-1 absolute -top-2/8 sm:top-1/5 left-8  transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-3 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-[bounce_4s_infinite] min-w-50 w-fit  transition-all">
                     <FontAwesomeIcon
                       icon={faReact}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -240,7 +240,7 @@ const Page = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="floating-badge badge-1 absolute  right-1 lg:top-3/7 lg:-right-2/5 bg-gray-700  border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50  transition-all">
+                  <div className="floating-badge badge-1 absolute  -bottom-3/6 -right-3/6 sm:right-1 lg:top-3/7 lg:-right-2/5 bg-gray-700  border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50  transition-all">
                     <FontAwesomeIcon
                       icon={faNodeJs}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -264,7 +264,7 @@ const Page = () => {
                         JavaScript
                       </span>
                       <span className="badge-libs text-xs">
-                        ES6+, TypeScript, jQuery
+                        ES6+, TypeScript,
                       </span>
                     </div>
                   </div>
@@ -285,8 +285,8 @@ const Page = () => {
         </div>
         <div id="about" className="h-fit relative max-w-6xl mx-auto py-8 ">
           <h3 className="text-center text-2xl my-8">About me</h3>
-          <div className="flex  items-center lg:gap-12 justify-center">
-            <div className="bg-radial-[at_50%] relative   from-secondary-light to-primary  flex items-center justify-center     shadow-purple-800   size-90     bg-center ">
+          <div className="flex  items-center sm:gap-8 px-4 lg:gap-12 justify-center">
+            <div className="bg-radial-[at_50%] relative hidden sm:flex  from-secondary-light to-primary   items-center justify-center     shadow-purple-800   size-90     bg-center ">
               <Image
                 src={"/me.png"}
                 alt="stephen olise"
@@ -317,7 +317,7 @@ const Page = () => {
                 applications and working with web technologies and creating
                 beautiful user interfaces.
               </p>
-              <div className="  mt-8 flex gap-4">
+              <div className="  mt-8 flex gap-4 justify-center">
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={18} />
                   <p>Projects</p>
@@ -331,11 +331,21 @@ const Page = () => {
                   <p>Projects</p>
                 </div>
               </div>
+              <div className=" mt-4 ">
+                {" "}
+                <a
+                  href="/int_cv_9_02_2026.pdf"
+                  download={"Osa-afiana_stephen_olise_cv.pdf"}
+                  className="flex px-4 py-1 h-9 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
+                >
+                  Download cv
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="max-w-6xl px-4 py-8">
+        <div id="skills" className="max-w-6xl px-4 py-8">
           <h3 className="mb-8 text-2xl font-bold text-center">Skills </h3>
           <div className="flex gap-8 flex-wrap max-w-6xl ">
             <div className="min-w-80 flex-1 p-5 rounded-xl border-gray-200 border bg-gray-800 shadow-2xl flex flex-col gap-8">
@@ -402,7 +412,6 @@ const Page = () => {
               </div>
             </div>
           </div>
-          currently learning
         </div>
 
         <div className="py-8 max-w-6xl mx-auto">
@@ -410,29 +419,29 @@ const Page = () => {
             {" "}
             What I Bring
           </h2>
-          <div className=" py-2 flex  gap-4 ">
-            <div className=" flex text-center p-4  items-center gap-4 flex-col flex-1  justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
+          <div className=" py-2 flex flex-wrap px-4  gap-4 ">
+            <div className="min-w-40 w-full flex text-center p-4  items-center gap-4 flex-col flex-1   justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
               <FontAwesomeIcon
                 icon={faCode}
                 className="text-4xl mt-8 mb-2 text-purple-200"
               />
               <p className="">Clean, maintainable UI code</p>
             </div>
-            <div className=" flex text-center p-4 items-center gap-4 flex-col flex-1  justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
+            <div className="min-w-40 w-full flex text-center p-4 items-center gap-4 flex-col flex-1  justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
               <FontAwesomeIcon
                 icon={faBugSlash}
                 className="text-4xl mt-8 mb-2 text-purple-200"
               />
               <p className="">Strong debugging skills</p>
             </div>
-            <div className="  flex p-4 text-center items-center gap-4 flex-col flex-1  justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
+            <div className="min-w-40 w-full  flex p-4 text-center items-center gap-4 flex-col flex-1  justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
               <FontAwesomeIcon
                 icon={faClock}
                 className="text-4xl mt-8 mb-2 text-purple-200"
               />
               <p className="">Real-world project experience (MERN stack)</p>
             </div>
-            <div className=" flex p-4 text-center items-center gap-4 flex-col flex-1  justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
+            <div className="min-w-40 w-full flex p-4 text-center items-center gap-4 flex-col flex-1  justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
               <FontAwesomeIcon
                 icon={faGraduationCap}
                 className="text-4xl mt-8 mb-2 text-purple-200"
@@ -443,15 +452,15 @@ const Page = () => {
         </div>
 
         <div className="max-w-6xl px-4 py-8 " id="projects">
-          <h3 className="text-2xl font-bold my-8 text-center ">Projects 4</h3>
+          <h3 className="text-2xl font-bold my-8 text-center ">Projects </h3>
           <div className="">
-             <StickyScroll />
+            <StickyScroll />
           </div>
         </div>
 
-        <div className="bg-secondary rounded-2xl  p-8">
+        <div id="contact" className="bg-secondary rounded-2xl  p-8">
           <h3 className="text-center font-bold text-4xl m-12">Contact</h3>
-          <div className="flex w-full justify-center max-w-5xl mx-auto  gap-6 md:gap-8">
+          <div className="flex md:flex-row flex-col w-full justify-center max-w-5xl mx-auto  gap-12 md:gap-8">
             <div className="flex flex-col gap-8">
               <div className=" flex items-center gap-4 rounded-lg border-purple-300 border-2 max-w-sm w-full p-4 lg:p-8 ">
                 <div className="bg-linear-90 from-purple-300 top purple-500 p-2 rounded-md">
@@ -484,7 +493,15 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <form onSubmit={handleSubmit} className="w-full mx-auto max-w-lg">
+            <form
+              onSubmit={handleSubmit}
+              className="w-full mx-auto max-w-lg relative"
+            >
+              {loading && (
+                <div className=" absolute  inset-0 bg-gray-900">
+                  <div className="w-4 h-4 top-1/2 left-1/2 transform -translate-1/2  rounded-full animate-loader bg-amber-600 animate-spin"></div>
+                </div>
+              )}{" "}
               <div className=" w-full flex flex-col gap-4 md:gap-6">
                 <div className="">
                   <label className="block text-sm font-medium mb-1">Name</label>
@@ -557,7 +574,7 @@ const Page = () => {
         </div>
       </div>
       <div className="footer min-h-60 bg-secondary w-full rounded-2xl">
-        <div className="max-w-6xl mx-auto py-8 lg:py-12 px-4 flex justify-between items-center gap-12">
+        <div className="max-w-6xl mx-auto py-8 lg:py-12 px-4 flex  md:flex-row flex-col justify-between items-center gap-12">
           <div className="">
             <h3 className="text-2xl font-semibold mb-1">
               Osa-afiana Stephen Olise

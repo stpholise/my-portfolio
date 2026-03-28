@@ -34,9 +34,9 @@ const StickyScroll = () => {
   //     return () => window.removeEventListener("scroll", handleScroll);
   //   }, []);
   return (
-    <div className="grid grid-cols-2 py-4">
+    <div className="grid sm:grid-cols-2 py-4">
       <div className="sticky top-40 h-100 xl:h-80 hidden md:block rounded-xl  overflow-hidden max-w-sm ">
-        <h2 className="text-4xl font-medium text-gray-200 my-3">
+        <h2 className=" text-4xl lg:text-5xl font-medium text-gray-200 mb-6 ">
           Featured Projects
         </h2>
         <p className="text-lg text-gray-400 max-w-lg">
@@ -44,7 +44,7 @@ const StickyScroll = () => {
           and user-focused design I bring to every build.
         </p>{" "}
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-8">
         {projects.map((project) => (
           <div
             // ref={(el) => {
@@ -52,7 +52,7 @@ const StickyScroll = () => {
             // }}
             key={project.id}
             className={clsx(
-              "p-4 border rounded-xl max-w-lg",
+              "p-4 border rounded-xl w-full max-w-lg",
               //   i == active ? "flex flex-col" : "opacity-0",
             )}
           >
@@ -79,7 +79,7 @@ const StickyScroll = () => {
               ))}
             </div>
 
-            <div className="flex gap-4 mt-3">
+            <div className="flex gap-4 mt-5">
               <a
                 href={project.live}
                 target="_blank"
@@ -87,7 +87,11 @@ const StickyScroll = () => {
               >
                 Live
               </a>
-              <a href={project.github} target="_blank">
+              <a
+                href={project.github}
+                target="_blank"
+                className="flex px-4 py-1 h-9 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
+              >
                 GitHub
               </a>
             </div>
