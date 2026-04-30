@@ -28,6 +28,9 @@ import { ChangeEvent, SyntheticEvent, useState } from "react";
 import toast from "react-hot-toast";
 import StickyScroll from "./_components/StickyScroll";
 
+ 
+ 
+
 interface InputValuesType {
   name: string;
   phone: string;
@@ -345,7 +348,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div id="skills" className="max-w-6xl px-4 py-8">
+        {/* <div id="skills" className="max-w-6xl px-4 py-8">
           <h3 className="mb-8 text-2xl font-bold text-center">Skills </h3>
           <div className="flex gap-8 flex-wrap max-w-6xl ">
             <div className="min-w-80 flex-1 p-5 rounded-xl border-gray-200 border bg-gray-800 shadow-2xl flex flex-col gap-8">
@@ -412,7 +415,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="py-8 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold my-8 text-center ">
