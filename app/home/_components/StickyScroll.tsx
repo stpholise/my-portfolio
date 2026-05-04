@@ -60,7 +60,7 @@ const StickyScroll = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="rounded-lg w-full"
+                className="rounded-lg w-full xl:min-h-80 object-cover"
                 height={400}
                 width={400}
               />
@@ -105,59 +105,100 @@ const StickyScroll = () => {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Hotel Booking Website",
+    title: "TalentPool",
     description:
-      "A modern hotel booking platform with room listings, availability checking, and responsive UI for guests.",
-    tech: ["React", "Next.js", "Tailwind CSS", "Node.js"],
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
-    live: "https://your-hotel-app.vercel.app",
-    github: "https://github.com/yourusername/hotel-app",
+      "A modern job-hunting platform designed to simplify the job search experience.",
+    tech: ["React", "Tailwind CSS", "TypeScript"],
+    image: "/projects/talentPool.png",
+    live: "https://job-seeker-dashboard.vercel.app/",
+    github: "https://github.com/stpholise/TalentPool",
   },
+
   {
     id: 2,
     title: "Portfolio Website",
     description:
       "Personal developer portfolio showcasing projects, skills, and contact form with smooth animations.",
-    tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop",
-    live: "https://your-portfolio.vercel.app",
-    github: "https://github.com/yourusername/portfolio",
+    tech: ["React.js", "Tailwind CSS", "TypeScript"],
+    image: "/projects/jomart.png",
+    live: "https://jomart-one.vercel.app/",
+    github: "https://github.com/stpholise/jomart-",
   },
+  // {
+  //   id: 2,
+  //   title: "Portfolio Website",
+  //   description:
+  //     "Personal developer portfolio showcasing projects, skills, and contact form with smooth animations.",
+  //   tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop",
+  //   live: "https://your-portfolio.vercel.app",
+  //   github: "https://github.com/yourusername/portfolio",
+  // },
   {
     id: 3,
-    title: "E-commerce Store",
+    title: "Mearn-Estate",
     description:
-      "Full-stack e-commerce app with cart, checkout, product filtering, and admin dashboard.",
+      "a real-estate web app aimed at connecting home owners to potential tenants.",
     tech: ["React", "Node.js", "MongoDB", "Express"],
-    image:
-      "https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?q=80&w=2070&auto=format&fit=crop",
-    live: "https://your-store.vercel.app",
-    github: "https://github.com/yourusername/ecommerce",
+    image: "/projects/mearnEstate.png",
+    live: "https://mern-estate-s1pz.onrender.com/",
+    github: "https://github.com/stpholise/mern-estate",
   },
+  // {
+  //   id: 3,
+  //   title: "E-commerce Store",
+  //   description:
+  //     "Full-stack e-commerce app with cart, checkout, product filtering, and admin dashboard.",
+  //   tech: ["React", "Node.js", "MongoDB", "Express"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?q=80&w=2070&auto=format&fit=crop",
+  //   live: "https://your-store.vercel.app",
+  //   github: "https://github.com/yourusername/ecommerce",
+  // },
   {
     id: 4,
-    title: "Task Management App",
+    title: "Comfort Hotel Booking Website",
     description:
-      "A productivity app that allows users to create, update, and track tasks with deadlines.",
-    tech: ["React", "TypeScript", "Firebase"],
-    image:
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
-    live: "https://your-task-app.vercel.app",
-    github: "https://github.com/yourusername/task-manager",
+      "A modern hotel booking platform with room listings, availability checking, and responsive UI for guests.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Node.js."],
+    image:"/projects/comfortHotel.png",
+     live: "https://job-seeker-dashboard.vercel.app/",
+    github: "https://github.com/stpholise/comfort_hotel",
   },
-  {
-    id: 5,
-    title: "Social Media Dashboard",
-    description:
-      "Dashboard UI displaying analytics, user engagement, and charts for social media platforms.",
-    tech: ["React", "Chart.js", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    live: "https://your-dashboard.vercel.app",
-    github: "https://github.com/yourusername/dashboard",
-  },
+  // {
+  //   id: 4,
+  //   title: "Task Management App",
+  //   description:
+  //     "A productivity app that allows users to create, update, and track tasks with deadlines.",
+  //   tech: ["React", "TypeScript", "Firebase"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
+  //   live: "https://your-task-app.vercel.app",
+  //   github: "https://github.com/yourusername/task-manager",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Social Media Dashboard",
+  //   description:
+  //     "Dashboard UI displaying analytics, user engagement, and charts for social media platforms.",
+  //   tech: ["React", "Chart.js", "Tailwind CSS"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+  //   live: "https://your-dashboard.vercel.app",
+  //   github: "https://github.com/stpholise/chatty",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Social Media Dashboard",
+  //   description:
+  //     "Dashboard UI displaying analytics, user engagement, and charts for social media platforms.",
+  //   tech: ["React", "Chart.js", "Tailwind CSS"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+  //   live: "https://your-dashboard.vercel.app",
+  //   github: "https://github.com/stpholise/chatty",
+  // },
 ];
 
 export default StickyScroll;

@@ -28,6 +28,9 @@ import { ChangeEvent, SyntheticEvent, useState } from "react";
 import toast from "react-hot-toast";
 import StickyScroll from "./_components/StickyScroll";
 
+ 
+ 
+
 interface InputValuesType {
   name: string;
   phone: string;
@@ -240,7 +243,7 @@ const Page = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="floating-badge badge-1 absolute  -bottom-3/6 -right-3/6 sm:right-1 lg:top-3/7 lg:-right-2/5 bg-gray-700  border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50  transition-all">
+                  <div className=" h-fit floating-badge badge-1 absolute  -bottom-3/6 -right-3/6 sm:right-1 lg:top-3/7 lg:-right-2/5 bg-gray-700  border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50  transition-all">
                     <FontAwesomeIcon
                       icon={faNodeJs}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -254,7 +257,7 @@ const Page = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="floating-badge badge-1 absolute top-6/7 left-0 transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50 w-fit  transition-all">
+                  <div className=" h-fit floating-badge badge-1 absolute top-6/7 left-0 transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50 w-fit  transition-all">
                     <FontAwesomeIcon
                       icon={faJs}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -319,12 +322,12 @@ const Page = () => {
               </p>
               <div className="  mt-8 flex gap-4 justify-center">
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
-                  <StatNumber target={18} />
+                  <StatNumber target={12} />
                   <p>Projects</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
-                  <StatNumber target={18} />
-                  <p>Projects</p>
+                  <StatNumber target={3} />
+                  <p>Years Experience</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={18} />
@@ -345,7 +348,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div id="skills" className="max-w-6xl px-4 py-8">
+        {/* <div id="skills" className="max-w-6xl px-4 py-8">
           <h3 className="mb-8 text-2xl font-bold text-center">Skills </h3>
           <div className="flex gap-8 flex-wrap max-w-6xl ">
             <div className="min-w-80 flex-1 p-5 rounded-xl border-gray-200 border bg-gray-800 shadow-2xl flex flex-col gap-8">
@@ -412,7 +415,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="py-8 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold my-8 text-center ">
