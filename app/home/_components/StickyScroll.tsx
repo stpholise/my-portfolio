@@ -44,7 +44,7 @@ const StickyScroll = () => {
           and user-focused design I bring to every build.
         </p>{" "}
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 mx-auto md:mx-0">
         {projects.map((project) => (
           <div
             // ref={(el) => {

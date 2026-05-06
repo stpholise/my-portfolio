@@ -17,6 +17,7 @@ import {
   faGraduationCap,
   faPhone,
   faLocation,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Field from "../_components/cells/Field";
@@ -283,6 +284,20 @@ const Page = () => {
                 My focus is creating clean user interfaces, high-performance
                 applications, and solutions that provide real value to users.
               </p>
+                <div className="  mt-8 flex gap-4 justify-center">
+                <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
+                  <StatNumber target={12} />
+                  <p>Projects</p>
+                </div>
+                <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
+                  <StatNumber target={3} />
+                  <p> Experience</p>
+                </div>
+                <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
+                  <StatNumber target={18} />
+                  <p>Projects</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -311,29 +326,29 @@ const Page = () => {
                   <div className="circle inset-0 size-30 absolute w-full h-full border border-gray-300 rounded-full animate-[ping_1.5s_1.6s_infinite_linear]"></div>
                 </div>
               </div>
-              <h3 className=" text-xl font-medium ">
+              {/* <h3 className=" text-xl font-medium ">
                 Hi, I&apos;m Osa-afiana Stephen Olise, based in Nigeria
-              </h3>
+              </h3> */}
               <p className="">
                 I&apos;m a passionate Frontend/Web developer, with extensive
                 knowledge and years of experience, in building mordern web
                 applications and working with web technologies and creating
                 beautiful user interfaces.
               </p>
-              <div className="  mt-8 flex gap-4 justify-center">
+              {/* <div className="  mt-8 flex gap-4 justify-center">
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={12} />
                   <p>Projects</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={3} />
-                  <p>Years Experience</p>
+                  <p> Experience</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={18} />
                   <p>Projects</p>
                 </div>
-              </div>
+              </div> */}
               <div className=" mt-4 ">
                 {" "}
                 <a
@@ -341,7 +356,7 @@ const Page = () => {
                   download={"Osa-afiana_stephen_olise_cv.pdf"}
                   className="flex px-4 py-1 h-9 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
                 >
-                  Download cv
+                  Resume <FontAwesomeIcon icon={faDownload} className="text-base ml-1"/>
                 </a>
               </div>
             </div>
@@ -417,7 +432,7 @@ const Page = () => {
           </div>
         </div> */}
 
-        <div className="py-8 max-w-6xl mx-auto">
+        {/* <div className="py-8 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold my-8 text-center ">
             {" "}
             What I Bring
@@ -452,7 +467,7 @@ const Page = () => {
               <p className="">Continuous learning mindset</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="max-w-6xl px-4 py-8 " id="projects">
           <h3 className="text-2xl font-bold my-8 text-center ">Projects </h3>
