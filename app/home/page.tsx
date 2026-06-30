@@ -17,12 +17,13 @@ import {
   faGraduationCap,
   faPhone,
   faLocation,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Field from "../_components/cells/Field";
 //  import ErrorMessage from "../_components/cells/ErrorMessage";
 // import CircularGallery from "./_components/CircularGallery";
-import StatNumber from "../_components/cells/StatNumber";
+// import StatNumber from "../_components/cells/StatNumber";
 import SkillSlider from "../_components/cells/SkillSlider";
 import { ChangeEvent, SyntheticEvent, useState } from "react";
 import toast from "react-hot-toast";
@@ -275,26 +276,48 @@ const Page = () => {
               </div>
             </div>
             <div className=" max-w-2xl mx-auto lg:mt-8 md:mt-12 ">
-              <p className="">
+                 <div className=" relative w-full h-full -z-1">
+                <div className="wrapper_1 absolute m-auto size-20 left-1/2 top-1/2 transform -translate-1/2">
+                  <div className="circle absolute top-1/2 left-1/2 transform -translate-1/2 size-10 border-gray-200 border rounded-full animate-[ping_1.5s_1.2s_infinite_linear]"></div>
+                  <div className="circle absolute top-1/2 left-1/2 transform -translate-1/2 size-15 border-gray-200 border rounded-full animate-[ping_1.5s_1.4s_infinite_linear]"></div>
+                  <div className="circle inset-0 size-20 absolute w-full h-full border border-gray-300 rounded-full animate-[ping_1.5s_1.6s_infinite_linear]"></div>
+                </div>
+                <div className="wrapper_1 absolute m-auto size-30 left-1/2 top-2/3  ">
+                  <div className="circle size-20 absolute top-1/2 left-1/2 transform -translate-1/2  border-gray-200 border rounded-full animate-[ping_1.5s_1.2s_infinite_linear]"></div>
+                  <div className="circle size-24 absolute top-1/2 left-1/2 transform -translate-1/2  border-gray-200 border rounded-full animate-[ping_1.5s_1.4s_infinite_linear]"></div>
+                  <div className="circle inset-0 size-30 absolute w-full h-full border border-gray-300 rounded-full animate-[ping_1.5s_1.6s_infinite_linear]"></div>
+                </div>
+              </div>
+              <p className="text-center">
                 I build modern, scalable web applications using React, Next.js,
                 TypeScript, and other modern technologies.
               </p>
-              <p className="">
+              <p className="text-center mt-4">
                 My focus is creating clean user interfaces, high-performance
                 applications, and solutions that provide real value to users.
               </p>
+               <div className=" mt-8 ">
+                {" "}
+                <a
+                  href="/int_cv_9_02_2026.pdf"
+                  download={"Osa-afiana_stephen_olise_cv.pdf"}
+                  className="flex px-4 py-1 h-9 max-w-sm mx-auto items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
+                >
+                  Resume <FontAwesomeIcon icon={faDownload} className="text-base ml-1"/>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div id="about" className="h-fit relative max-w-6xl mx-auto py-8 ">
-          <h3 className="text-center text-2xl my-8">About me</h3>
+        {/* <div id="about" className="h-fit relative max-w-6xl mx-auto py-8 ">
+           <h3 className="text-center text-2xl my-8">About me</h3> 
           <div className="flex  items-center sm:gap-8 px-4 lg:gap-12 justify-center">
             <div className="bg-radial-[at_50%] relative hidden sm:flex  from-secondary-light to-primary   items-center justify-center     shadow-purple-800   size-90     bg-center ">
               <Image
                 src={"/me.png"}
                 alt="stephen olise"
-                width={400}
-                height={1000}
+                width={1200}
+                height={960}
                 className="size-full   overflow-hidden "
               />
             </div>
@@ -311,29 +334,29 @@ const Page = () => {
                   <div className="circle inset-0 size-30 absolute w-full h-full border border-gray-300 rounded-full animate-[ping_1.5s_1.6s_infinite_linear]"></div>
                 </div>
               </div>
-              <h3 className=" text-xl font-medium ">
+               <h3 className=" text-xl font-medium ">
                 Hi, I&apos;m Osa-afiana Stephen Olise, based in Nigeria
-              </h3>
+              </h3> 
               <p className="">
                 I&apos;m a passionate Frontend/Web developer, with extensive
                 knowledge and years of experience, in building mordern web
                 applications and working with web technologies and creating
                 beautiful user interfaces.
               </p>
-              <div className="  mt-8 flex gap-4 justify-center">
+               <div className="  mt-8 flex gap-4 justify-center">
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={12} />
                   <p>Projects</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={3} />
-                  <p>Years Experience</p>
+                  <p> Experience</p>
                 </div>
                 <div className="h-28 w-30 p-3 flex flex-col gap-2 py-8 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 ">
                   <StatNumber target={18} />
                   <p>Projects</p>
                 </div>
-              </div>
+              </div> 
               <div className=" mt-4 ">
                 {" "}
                 <a
@@ -341,14 +364,14 @@ const Page = () => {
                   download={"Osa-afiana_stephen_olise_cv.pdf"}
                   className="flex px-4 py-1 h-9 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
                 >
-                  Download cv
+                  Resume <FontAwesomeIcon icon={faDownload} className="text-base ml-1"/>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* <div id="skills" className="max-w-6xl px-4 py-8">
+         {/* <div id="skills" className="max-w-6xl px-4 py-8">
           <h3 className="mb-8 text-2xl font-bold text-center">Skills </h3>
           <div className="flex gap-8 flex-wrap max-w-6xl ">
             <div className="min-w-80 flex-1 p-5 rounded-xl border-gray-200 border bg-gray-800 shadow-2xl flex flex-col gap-8">
@@ -415,9 +438,9 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>  */}
 
-        <div className="py-8 max-w-6xl mx-auto">
+        {/* <div className="py-8 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold my-8 text-center ">
             {" "}
             What I Bring
@@ -452,7 +475,7 @@ const Page = () => {
               <p className="">Continuous learning mindset</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="max-w-6xl px-4 py-8 " id="projects">
           <h3 className="text-2xl font-bold my-8 text-center ">Projects </h3>
