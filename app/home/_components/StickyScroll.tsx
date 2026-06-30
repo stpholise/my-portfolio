@@ -116,7 +116,7 @@ export const projects: Project[] = [
 
   {
     id: 2,
-    title: "Portfolio Website",
+    title: "Jomart Engineering",
     description:
       "Personal developer portfolio showcasing projects, skills, and contact form with smooth animations.",
     tech: ["React.js", "Tailwind CSS", "TypeScript"],
@@ -162,8 +162,8 @@ export const projects: Project[] = [
     description:
       "A modern hotel booking platform with room listings, availability checking, and responsive UI for guests.",
     tech: ["React", "Next.js", "Tailwind CSS", "Node.js."],
-    image:"/projects/comfortHotel.png",
-     live: "https://job-seeker-dashboard.vercel.app/",
+    image: "/projects/comfortHotel.png",
+    live: "https://comfort-hotel.vercel.app/home",
     github: "https://github.com/stpholise/comfort_hotel",
   },
   // {
