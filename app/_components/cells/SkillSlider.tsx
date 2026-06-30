@@ -24,9 +24,9 @@ const SkillSlider = ({ level, label }: SkillSliderProps) => {
     <div className="w-full max-w-md">
       <div className="flex justify-between mb-1 text-sm font-medium">
         <span>{label}</span>
-        <span>{level}%</span>
+        {/* <span>{level}%</span> */}
       </div>
-
+{/* 
       <div className="w-full bg-black z-1 relative h-2.5 rounded-full overflow-hidden">
         <div
           className={clsx(
@@ -35,7 +35,7 @@ const SkillSlider = ({ level, label }: SkillSliderProps) => {
           )}
         />
         <div className="absolute inset-0 w-full -z-1 bg-linear-90 from-transparent via-white/90  to-transparent animate-shimmer"></div>
-      </div>
+      </div> */}
     </div>
   );
 };
