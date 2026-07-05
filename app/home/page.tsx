@@ -29,9 +29,6 @@ import { ChangeEvent, SyntheticEvent, useState } from "react";
 import toast from "react-hot-toast";
 import StickyScroll from "./_components/StickyScroll";
 
- 
- 
-
 interface InputValuesType {
   name: string;
   phone: string;
@@ -174,7 +171,8 @@ const Page = () => {
                 <div className="  ">
                   <div className="hero-social flex gap-4">
                     <Link
-                      href="#"
+                      target="_blank"
+                      href="https://github.com/stpholise/"
                       className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
                       title="GitHub"
                     >
@@ -184,9 +182,10 @@ const Page = () => {
                       />
                     </Link>
                     <Link
-                      href="#"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/stephen-osa-afiana-53b7b0269/"
                       className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-                      title="GitHub"
+                      title="Linkedin"
                     >
                       <FontAwesomeIcon
                         icon={faLinkedin}
@@ -194,9 +193,10 @@ const Page = () => {
                       />
                     </Link>
                     <Link
-                      href="#"
+                      target="_blank"
+                      href="https://x.com/abross15822591"
                       className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-                      title="GitHub"
+                      title="X"
                     >
                       <FontAwesomeIcon
                         icon={faXTwitter}
@@ -204,16 +204,16 @@ const Page = () => {
                       />
                     </Link>
 
-                    <Link
-                      href="#"
+                    <a
+                      href="mailto:stpholise@gmail.com"
                       className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-                      title="GitHub"
+                      title="email"
                     >
                       <FontAwesomeIcon
                         icon={faEnvelope}
                         className="text-2xl text-purple-400"
                       />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -276,7 +276,7 @@ const Page = () => {
               </div>
             </div>
             <div className=" max-w-2xl mx-auto lg:mt-8 md:mt-12 ">
-                 <div className=" relative w-full h-full -z-1">
+              <div className=" relative w-full h-full -z-1">
                 <div className="wrapper_1 absolute m-auto size-20 left-1/2 top-1/2 transform -translate-1/2">
                   <div className="circle absolute top-1/2 left-1/2 transform -translate-1/2 size-10 border-gray-200 border rounded-full animate-[ping_1.5s_1.2s_infinite_linear]"></div>
                   <div className="circle absolute top-1/2 left-1/2 transform -translate-1/2 size-15 border-gray-200 border rounded-full animate-[ping_1.5s_1.4s_infinite_linear]"></div>
@@ -296,14 +296,18 @@ const Page = () => {
                 My focus is creating clean user interfaces, high-performance
                 applications, and solutions that provide real value to users.
               </p>
-               <div className=" mt-8 ">
+              <div className=" mt-8 ">
                 {" "}
                 <a
                   href="/int_cv_9_02_2026.pdf"
                   download={"Osa-afiana_stephen_olise_cv.pdf"}
                   className="flex px-4 py-1 h-9 max-w-sm mx-auto items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
                 >
-                  Resume <FontAwesomeIcon icon={faDownload} className="text-base ml-1"/>
+                  Resume{" "}
+                  <FontAwesomeIcon
+                    icon={faDownload}
+                    className="text-base ml-1"
+                  />
                 </a>
               </div>
             </div>
@@ -371,7 +375,7 @@ const Page = () => {
           </div>
         </div> */}
 
-         {/* <div id="skills" className="max-w-6xl px-4 py-8">
+        {/* <div id="skills" className="max-w-6xl px-4 py-8">
           <h3 className="mb-8 text-2xl font-bold text-center">Skills </h3>
           <div className="flex gap-8 flex-wrap max-w-6xl ">
             <div className="min-w-80 flex-1 p-5 rounded-xl border-gray-200 border bg-gray-800 shadow-2xl flex flex-col gap-8">
@@ -609,7 +613,8 @@ const Page = () => {
           </div>
           <div className="hero-social flex gap-4">
             <Link
-              href="#"
+              target="_blank"
+              href="https://github.com/stpholise/"
               className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
               title="GitHub"
             >
@@ -619,9 +624,10 @@ const Page = () => {
               />
             </Link>
             <Link
-              href="#"
+              target="_blank"
+              href="https://www.linkedin.com/in/stephen-osa-afiana-53b7b0269/"
               className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-              title="GitHub"
+              title="linkedin"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
@@ -629,9 +635,10 @@ const Page = () => {
               />
             </Link>
             <Link
-              href="#"
+              target="_blank"
+              href="https://x.com/abross15822591"
               className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-              title="GitHub"
+              title="x"
             >
               <FontAwesomeIcon
                 icon={faXTwitter}
@@ -640,9 +647,9 @@ const Page = () => {
             </Link>
 
             <Link
-              href="#"
+              href="mailto:stpholise@gmail.com"
               className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-              title="GitHub"
+              title="email"
             >
               <FontAwesomeIcon
                 icon={faEnvelope}

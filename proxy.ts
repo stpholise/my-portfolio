@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 
 
 export function proxy(request: NextRequest) {
-  return NextResponse.redirect(new URL('/home', request.url))
+  return NextResponse.rewrite(new URL('/home', request.url))
 }
 
 export const config = {

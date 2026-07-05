@@ -28,18 +28,7 @@ const Header = () => {
 };
 
 const nav = [
-  // {
-  //   url: "/",
-  //   label: "Home",
-  // },
-  // {
-  //   url: "#about",
-  //   label: "About",
-  // },
-  // {
-  //   url: "#skills",
-  //   label: "Skills",
-  // },
+ 
   {
     url: "#projects",
     label: "Projects",
