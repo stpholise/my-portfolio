@@ -39,7 +39,7 @@ const StickyScroll = () => {
         <h2 className=" text-4xl lg:text-5xl font-medium text-gray-200 mb-6 ">
           Featured Projects
         </h2>
-        <p className="text-lg text-gray-400 max-w-lg">
+        <p className="text-lg text-gray-200 max-w-lg">
           A selection of projects that reflect the quality, attention to detail,
           and user-focused design I bring to every build.
         </p>{" "}
@@ -52,7 +52,7 @@ const StickyScroll = () => {
             // }}
             key={project.id}
             className={clsx(
-              "p-4 border rounded-xl w-full max-w-lg",
+              "p-4 py-6 border border-secondary-2 rounded-xl w-full max-w-lg bg-secondary",
               //   i == active ? "flex flex-col" : "opacity-0",
             )}
           >
@@ -65,14 +65,14 @@ const StickyScroll = () => {
                 width={400}
               />
             </Link>
-            <h3 className="text-xl font-semibold mt-2">{project.title}</h3>
-            <p className="text-gray-400">{project.description}</p>
+            <h3 className="text-xl font-semibold mt-3 mb-2">{project.title}</h3>
+            <p className="text-secondary-2">{project.description}</p>
 
             <div className="flex gap-2 my-2">
               {project.tech.map((tech) => (
                 <span
                   key={tech}
-                  className="text-sm bg-purple-600 shadow-purple-950 px-4  py-1 rounded-full w-fit "
+                  className="text-sm bg-secondary-3 shadow-black px-4  py-1 rounded-full w-fit "
                 >
                   {tech}
                 </span>
@@ -83,14 +83,14 @@ const StickyScroll = () => {
               <a
                 href={project.live}
                 target="_blank"
-                className="flex px-4 py-1 h-9 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
+                className="flex px-4 py-1 h-9 items-center justify-center bg-secondary-2 text-primary border-secondary-4 hover:border-purple-2 shadow-sm shadow-secondary-3 border-2 rounded-xl   decoration-0 "
               >
                 Live
               </a>
               <a
                 href={project.github}
                 target="_blank"
-                className="flex px-4 py-1 h-9 items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
+                className="flex px-4 py-1 h-9 items-center justify-center bg-secondary-2 text-primary border-secondary-4 hover:border-purple-2 shadow-sm shadow-secondary-3 border-2 rounded-xl  decoration-0 text-sm font-medium "
               >
                 GitHub
               </a>
