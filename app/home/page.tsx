@@ -10,22 +10,16 @@ import {
   faXTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faClock } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope,} from "@fortawesome/free-regular-svg-icons";
 import {
-  faCode,
-  faBugSlash,
-  faGraduationCap,
+ 
   faPhone,
   faLocation,
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Field from "../_components/cells/Field";
-//  import ErrorMessage from "../_components/cells/ErrorMessage";
-// import CircularGallery from "./_components/CircularGallery";
-// import StatNumber from "../_components/cells/StatNumber";
-import SkillSlider from "../_components/cells/SkillSlider";
-import { ChangeEvent, SyntheticEvent, useState } from "react";
+ import { ChangeEvent, SyntheticEvent, useState } from "react";
 import toast from "react-hot-toast";
 import StickyScroll from "./_components/StickyScroll";
 
@@ -157,70 +151,18 @@ const Page = () => {
                   Hello I am Stephen Olise Osa-afiana
                 </h2>
                 <p className="">
-                  Frontend Developer @{" "}
+                  Frontend Engineer @{" "}
                   <a href="https://muzzlabtech.com/" target="_blank">
                     Muzzlab Technologies
                   </a>
                 </p>
-                <div className="mt-8">
-                  <div className="">
-                    <button type="button">Get in touch</button>
-                    <button type="button">View projects</button>
-                  </div>
-                </div>
-                <div className="  ">
-                  <div className="hero-social flex gap-4">
-                    <Link
-                      target="_blank"
-                      href="https://github.com/stpholise/"
-                      className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-                      title="GitHub"
-                    >
-                      <FontAwesomeIcon
-                        icon={faGithub}
-                        className="text-2xl text-purple-1"
-                      />
-                    </Link>
-                    <Link
-                      target="_blank"
-                      href="https://www.linkedin.com/in/stephen-osa-afiana-53b7b0269/"
-                      className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-                      title="Linkedin"
-                    >
-                      <FontAwesomeIcon
-                        icon={faLinkedin}
-                        className="text-2xl text-purple-1"
-                      />
-                    </Link>
-                    <Link
-                      target="_blank"
-                      href="https://x.com/abross15822591"
-                      className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-                      title="X"
-                    >
-                      <FontAwesomeIcon
-                        icon={faXTwitter}
-                        className="text-2xl text-purple-1"
-                      />
-                    </Link>
-
-                    <a
-                      href="mailto:stpholise@gmail.com"
-                      className="size-12 flex items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 "
-                      title="email"
-                    >
-                      <FontAwesomeIcon
-                        icon={faEnvelope}
-                        className="text-2xl text-purple-400"
-                      />
-                    </a>
-                  </div>
-                </div>
+               
               </div>
               <div className="hero-image-wrapper relative flex items-center justify-center">
+              
                 <div className="hero-image-container relative size-50 sm:size-100">
-                  <div className="profile-image-glow absolute top-1/2 left-1/2 transform -translate-1/2 size-[120%] rounded-full bg-radial-[at_50%] from-purple-900 from-0% to-70% to-transparent animate-pulse -z-1"></div>
-                  <div className="bg-radial-[at_50%] absolute top-1/2 left-1/2 transform -translate-1/2 from-secondary-light to-primary  flex items-center justify-center  border-purple-900 border-4 shadow-purple-800   size-90  rounded-full  bg-center ">
+                  <div className="profile-image-glow absolute top-1/2 left-1/2 transform -translate-1/2 size-[120%] rounded-full bg-radial-[at_50%] from-secondary from-0% to-70% to-transparent animate-pulse -z-1"></div>
+                  <div className="bg-radial-[at_50%] absolute top-1/2 left-1/2 transform -translate-1/2 from-secondary-2 to-primary  flex items-center justify-center  border-secondary-1 border-4    size-90  rounded-full  bg-center ">
                     <Image
                       src={"/me.png"}
                       alt="stephen olise"
@@ -229,10 +171,10 @@ const Page = () => {
                       className="size-full rounded-full overflow-hidden "
                     />
                   </div>
-                  <div className="floating-badge badge-1 absolute -top-2/8 sm:top-1/5 left-8  transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-3 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-[bounce_4s_infinite] min-w-50 w-fit  transition-all">
+                  <div className="floating-badge badge-1 absolute -top-2/8 sm:top-1/5 left-8  transform -translate-1/2 bg-secondary border-secondary-1 border-2 rounded-2xl py-2 px-3 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-secondary animate-[bounce_4s_infinite] min-w-50 w-fit  transition-all">
                     <FontAwesomeIcon
                       icon={faReact}
-                      className="text-3xl text-gray-200 hover:text-purple-500"
+                      className="text-3xl text-gray-200 hover:text-secondary-2"
                     />
 
                     <div className="badge-content">
@@ -244,7 +186,7 @@ const Page = () => {
                       </span>
                     </div>
                   </div>
-                  <div className=" h-fit floating-badge badge-1 absolute  -bottom-3/6 -right-3/6 sm:right-1 lg:top-3/7 lg:-right-2/5 bg-gray-700  border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50  transition-all">
+                  <div className=" h-fit floating-badge badge-1 absolute  -bottom-3/6 -right-3/6 sm:right-1 lg:top-3/7 lg:-right-2/5 bg-secondary border-secondary-1 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-secondary animate-floating-badge min-w-50  transition-all">
                     <FontAwesomeIcon
                       icon={faNodeJs}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -258,7 +200,7 @@ const Page = () => {
                       </span>
                     </div>
                   </div>
-                  <div className=" h-fit floating-badge badge-1 absolute top-6/7 left-0 transform -translate-1/2 bg-gray-700 border-gray-400 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-gray-600 animate-floating-badge min-w-50 w-fit  transition-all">
+                  <div className=" h-fit floating-badge badge-1 absolute top-6/7 left-0 transform -translate-1/2 bg-secondary border-secondary-1 border-2 rounded-2xl py-2 px-4 flex items-center font-semibold gap-2 text-gray-200 shadow-md shadow-secondary animate-floating-badge min-w-50 w-fit  transition-all">
                     <FontAwesomeIcon
                       icon={faJs}
                       className="text-3xl text-gray-200 hover:text-purple-500"
@@ -288,11 +230,12 @@ const Page = () => {
                   <div className="circle inset-0 size-30 absolute w-full h-full border border-gray-300 rounded-full animate-[ping_1.5s_1.6s_infinite_linear]"></div>
                 </div>
               </div>
-              <p className="text-center">
+                <h2 className="mb-4 text-xl">About Me</h2>
+              <p className="">
                 I build modern, scalable web applications using React, Next.js,
                 TypeScript, and other modern technologies.
               </p>
-              <p className="text-center mt-4">
+              <p className=" mt-4">
                 My focus is creating clean user interfaces, high-performance
                 applications, and solutions that provide real value to users.
               </p>
@@ -301,7 +244,7 @@ const Page = () => {
                 <a
                   href="/int_cv_9_02_2026.pdf"
                   download={"Osa-afiana_stephen_olise_cv.pdf"}
-                  className="flex px-4 py-1 h-9 max-w-sm mx-auto items-center justify-center bg-gray-700 border-purple-1 hover:border-purple-2 shadow-md shadow-purple-3 border-2 rounded-xl text-white decoration-0 text-sm font-medium "
+                  className="flex px-4 py-1 h-9 max-w-sm mx-auto items-center justify-center bg-secondary-1 border-secondary hover:border-primary shadow-sm shadow-secondary border-2 rounded-xl text-black decoration-0 text-sm font-medium "
                 >
                   Resume{" "}
                   <FontAwesomeIcon
@@ -488,12 +431,12 @@ const Page = () => {
           </div>
         </div>
 
-        <div id="contact" className="bg-secondary rounded-2xl  p-8">
+        <div id="contact" className="bg-secondary rounded-2xl  p-8 md:my-12">
           <h3 className="text-center font-bold text-4xl m-12">Contact</h3>
           <div className="flex md:flex-row flex-col w-full justify-center max-w-5xl mx-auto  gap-12 md:gap-8">
             <div className="flex flex-col gap-8">
-              <div className=" flex items-center gap-4 rounded-lg border-purple-300 border-2 max-w-sm w-full p-4 lg:p-8 ">
-                <div className="bg-linear-90 from-purple-300 top purple-500 p-2 rounded-md">
+              <div className=" flex items-center gap-4 rounded-lg border-secondary-2 border-2 max-w-sm w-full p-4 lg:p-8 ">
+                <div className="bg-linear-90 from-secondary-2 top purple-500 p-2 rounded-md">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="text-2xl lg:text-3xl"
@@ -504,8 +447,8 @@ const Page = () => {
                   <p className=" font-medium text-lg">stpholise@gmail.com</p>
                 </div>
               </div>
-              <div className=" flex items-center gap-4 rounded-lg border-purple-300 border-2 max-w-sm w-full p-4 lg:p-8 ">
-                <div className="bg-linear-90 from-purple-300 top purple-500 p-2 rounded-md">
+              <div className=" flex items-center gap-4 rounded-lg border-secondary-2 border-2 max-w-sm w-full p-4 lg:p-8 ">
+                <div className="bg-linear-90 from-secondary-2 top purple-500 p-2 rounded-md">
                   <FontAwesomeIcon icon={faPhone} className="text-2xl" />
                 </div>
                 <div className="">
@@ -513,8 +456,8 @@ const Page = () => {
                   <p className="font-medium text-lg">+2347069309340</p>
                 </div>
               </div>
-              <div className=" flex items-center gap-4 rounded-lg border-purple-300 border-2 max-w-sm w-full p-4 lg:p-8 ">
-                <div className="bg-linear-90 from-purple-300 top purple-500 p-2 rounded-md">
+              <div className=" flex items-center gap-4 rounded-lg border-secondary-2 border-2 max-w-sm w-full p-4 lg:p-8 ">
+                <div className="bg-linear-90 from-secondary-2 top purple-500 p-2 rounded-md">
                   <FontAwesomeIcon icon={faLocation} className="text-2xl" />
                 </div>
                 <div className="">
@@ -540,7 +483,7 @@ const Page = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleFieldChange}
-                    className="border border-gray-600 bg-gray-300  p-2 w-full h-11 rounded-md outline-none  text-white"
+                    className="border border-gray-600 bg-gray-300  p-2 w-full h-11 rounded-md outline-none  text-primary"
                   />
                   {errors.name && (
                     <p className="text-red-500 text-xs my-1">{errors.name}</p>
@@ -555,7 +498,7 @@ const Page = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleFieldChange}
-                    className="border border-gray-600 bg-gray-300 p-2 w-full h-11 rounded-md outline-none text-white"
+                    className="border border-gray-600 bg-gray-300 p-2 w-full h-11 rounded-md outline-none text-primary"
                   />
                   {errors.email && (
                     <p className="text-red-500 text-xs my-1">{errors.email}</p>
@@ -570,7 +513,7 @@ const Page = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleFieldChange}
-                    className="border border-gray-600 bg-gray-300  p-2 w-full h-11 rounded-md outline-none text-white"
+                    className="border border-gray-600 bg-gray-300  p-2 w-full h-11 rounded-md outline-none text-primary"
                   />
                   {errors.phone && (
                     <p className="text-red-500 text-xs my-1">{errors.phone}</p>
@@ -584,7 +527,7 @@ const Page = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleMessageChange}
-                    className="border border-gray-600 bg-gray-300   p-2 w-full rounded outline-none text-white"
+                    className="border border-gray-600 bg-gray-300   p-2 w-full rounded outline-none text-primary"
                   />
                   {errors.message && (
                     <p className="text-red-500 text-xs my-1">
@@ -594,7 +537,7 @@ const Page = () => {
                 </div>
                 <button
                   type="submit"
-                  className="mt-auto cursor-pointer block py-2 h-11 w-full bg-linear-30 from-purple-300 to-purple-500     rounded-lg text-sm font-semibold text-white"
+                  className="mt-auto cursor-pointer block py-2 h-11 w-full bg-linear-30 from-secondary-2 to-secondary-3     rounded-lg text-sm font-semibold text-white"
                 >
                   Send Request
                 </button>
@@ -603,7 +546,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="footer min-h-60 bg-secondary w-full rounded-2xl">
+      <div className="footer min-h-60 bg-secondary w-full ">
         <div className="max-w-6xl mx-auto py-8 lg:py-12 px-4 flex  md:flex-row flex-col justify-between items-center gap-12">
           <div className="">
             <h3 className="text-2xl font-semibold mb-1">
@@ -653,7 +596,7 @@ const Page = () => {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="text-2xl text-purple-400"
+                className="text-2xl text-secondary-2"
               />
             </Link>
           </div>
